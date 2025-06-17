@@ -276,8 +276,13 @@ nav ul li a:hover {
   background-color: var(--clr-neutral-100);
   padding: 1rem;
   box-shadow: var(--border-shadow);
-  align-content: center;
 
+}
+
+.gallery1 li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gallery1-col-span-2 {
@@ -324,16 +329,19 @@ nav ul li a:hover {
 
 .article2 {
   background-color: var(--clr-neutral-100);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 3rem;
   padding: 3rem;
 }
+
 
 .divider-block {
   text-align: left;
   max-width: 45ch;
 }
+
 .rund-ikon {
   width: 175px;
   height: 175px;
@@ -341,7 +349,9 @@ nav ul li a:hover {
   background-color: var(--clr-green-400);
   text-align: center;
   padding: 40px;
+  margin-left: 4rem;
 }
+
 
 
 /*Nyhetsbrev*/
@@ -613,6 +623,42 @@ button {
 }
 
 
+.article3 {
+  background-color: var(--clr-neutral-100);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+.divider-block2 {
+  text-align: left;
+  max-width: 55ch;
+}
+.rund-ikon2 {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background-color: var(--clr-green-400);
+  text-align: center;
+  padding: 40px;
+  margin-right: 4rem;
+}
+
+.button_more {
+  background-color: var(--clr-green-400);
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--fs-400);
+  border-radius: 15vh;
+  font-weight: var(--fw-semi-bold);
+  float: right;
+  margin-top: 5%;
+}
 
 
 
