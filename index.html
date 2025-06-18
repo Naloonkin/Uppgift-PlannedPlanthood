@@ -27,8 +27,19 @@
         <li><a href="#">Historik</a></li>
         <li><a href="#">Tips</a></li>
         <li><a href="#">Kontakt</a></li>
+        <li class="push hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </li>
       </ul>
+    </nav>
   </header>
+
+
+
+
+
   <article class="article1">
     <section class="container-top wrapper">
       <h2>Uppskattade växter</h2>
@@ -36,18 +47,18 @@
     </section>
 
 
+    <div class="wrapper">
+      <div class="gallery1">
+        <img class="img1 gallery1-col-span-2 gallery1-row-span-2" src="https://picsum.photos/id/239/200/300" alt="">
 
-    <ul class="gallery1 wrapper">
-      <li class="img1 gallery1-col-span-2 gallery1-row-span-2"><img src="https://picsum.photos/id/239/200/300"></li>
+        <img class="img2" src="https://picsum.photos/id/102/200/300" alt="">
+        <img class="img3" src="https://picsum.photos/id/248/200/300" alt="">
+        <img class="img5 gallery1-col-span-2 " src="https://picsum.photos/id/701/200/300" alt="">
 
-      <li class="img2"><img src="https://picsum.photos/id/102/200/300"></li>
-      <li class="img3"><img src="https://picsum.photos/id/248/200/300"></li>
-      <li class="img5 gallery1-col-span-2 "><img src="https://picsum.photos/id/701/200/300"></li>
-
-      <li class="img4 gallery1-col-span-2"><img src="https://picsum.photos/id/530/200/300"></li>
-      <li class="img6 gallery1-col-span-2"><img src="https://picsum.photos/id/360/200/300"></li>
-    </ul>
-
+        <img class="img4 gallery1-col-span-2" src="https://picsum.photos/id/530/200/300" alt="">
+        <img class="img6 gallery1-col-span-2" src="https://picsum.photos/id/360/200/300" alt="">
+      </div>
+    </div>
   </article>
 
 
@@ -61,7 +72,7 @@
           <button type="submit">Skicka</button>
         </form>
       </section>
-      <figure class="rund-ikon">
+      <figure class="rund-ikon margin-left">
         <img src="/Assets/images/icon-planting.svg" alt="" />
       </figure>
     </article>
@@ -71,234 +82,242 @@
 
     <article class="gallery2">
 
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/189/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-red">Blommor</div>
-          <div class="button-khaki">Ätbart</div>
-          <div class="button-green">Grönska</div>
-        </li>
-        <li>
+      <section class="card">
+        <img src="https://picsum.photos/id/189/200/300" alt="Växtbild" />
+        <ul>
+          <li class="gallery-tag red">Blommor</li>
+          <li class="gallery-tag khaki">Ätbart</li>
+          <li class="gallery-tag green">Grönska</li>
+        </ul>
+        <section>
           <h3>Gurka</h3>
           <p>Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med
             vattning, omplantering, duschning och gödsling.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Coolio</div>2024-04-01</p>
-        </li>
-      </ul>
+        </section>
 
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/287/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-brown">Solälskande</div>
-          <div class="button-blue">Lättodlat</div>
-          <div class="button-khaki">Ätbart</div>
-        </li>
-        <li>
+
+
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Coolio</br>2024-04-01</p>
+          </section>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="card">
+        <img src="https://picsum.photos/id/287/200/300" alt="Växtbild" />
+        <div class="gallery-tag brown">Solälskande</div>
+        <div class="gallery-tag blue">Lättodlat</div>
+        <div class="gallery-tag khaki">Ätbart</div>
+        <section>
           <h3>Tomat</h3>
           <p>En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Anna Odlare</div>2024-12-05</p>
-        </li>
-      </ul>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Anna Odlare</br>2024-12-05</p>
+          </section>
+        </div>
+      </section>
 
-
-
-
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/413/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-violet">Dekorativ</div>
-          <div class="button-purple">Färgstark</div>
-          <div class="button-navy">Tålig</div>
-          <div class="button-red">Blommor</div>
-        </li>
-        <li>
+      <section class="card">
+        <img src="https://picsum.photos/id/413/200/300" alt="Växtbild" />
+        <div class="gallery-tag violet">Dekorativ</div>
+        <div class="gallery-tag purple">Färgstark</div>
+        <div class="gallery-tag navy">Tålig</div>
+        <div class="gallery-tag red">Blommor</div>
+        <section>
           <h3>Pelargon</h3>
           <p>En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Blomsterkalle</div>2024-12-03</p>
-        </li>
-      </ul>
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/575/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-ocean">Kryddor</div>
-          <div class="button-pink">Doftande</div>
-          <div class="button-brown">Solälskande</div>
-        </li>
-        <li>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Blomsterkalle</br>2024-12-03</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="https://picsum.photos/id/575/200/300" alt="Växtbild" />
+        <div class="gallery-tag ocean">Kryddor</div>
+        <div class="gallery-tag pink">Doftande</div>
+        <div class="gallery-tag brown">Solälskande</div>
+        <section>
           <h3>Basilika</h3>
           <p>En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Krydd-Malin</div>2024-12-07</p>
-        </li>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Krydd-Malin</br>2024-12-07</p>
+          </section>
+        </div>
+      </section>
 
-      </ul>
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/24/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-grey">Snabbväxande</div>
-          <div class="button-khaki">Ätbart</div>
-          <div class="button-green">Grönska</div>
-        </li>
-        <li>
+      <section class="card">
+        <img src="https://picsum.photos/id/24/200/300" alt="Växtbild" />
+        <div class="gallery-tag grey">Snabbväxande</div>
+        <div class="gallery-tag khaki">Ätbart</div>
+        <div class="gallery-tag green">Grönska</div>
+        <section>
           <h3>Sallad</h3>
           <p>Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Grönis</div>2024-12-06</p>
-        </li>
-      </ul>
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/89/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-lake">Luftfuktande</div>
-          <div class="button-green">Grönska</div>
-          <div class="button-violet">Dekorativ</div>
-        </li>
-        <li>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Grönis</br>2024-12-06</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="https://picsum.photos/id/89/200/300" alt="Växtbild" />
+        <div class="gallery-tag lake">Luftfuktande</div>
+        <div class="gallery-tag green">Grönska</div>
+        <div class="gallery-tag violet">Dekorativ</div>
+        <section>
           <h3>Ormbunke</h3>
           <p>En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Naturvännen</div>2024-12-08</p>
-        </li>
-      </ul>
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/189/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-red">Blommor</div>
-          <div class="button-khaki">Ätbart</div>
-          <div class="button-green">Grönska</div>
-        </li>
-        <li>
+        </section>
+
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Naturvännen</br>2024-12-08</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="https://picsum.photos/id/189/200/300" alt="Växtbild" />
+        <div class="gallery-tag red">Blommor</div>
+        <div class="gallery-tag khaki">Ätbart</div>
+        <div class="gallery-tag green">Grönska</div>
+        <section>
           <h3>Gurka</h3>
           <p>Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med
             vattning, omplantering, duschning och gödsling.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Coolio</div>2024-04-01</p>
-        </li>
-      </ul>
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/287/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-brown">Solälskande</div>
-          <div class="button-blue">Lättodlat</div>
-          <div class="button-khaki">Ätbart</div>
-        </li>
-        <li>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Coolio</br>2024-04-01</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="https://picsum.photos/id/287/200/300" alt="Växtbild" />
+        <div class="gallery-tag brown">Solälskande</div>
+        <div class="gallery-tag blue">Lättodlat</div>
+        <div class="gallery-tag khaki">Ätbart</div>
+        <section>
           <h3>Tomat</h3>
           <p>En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-        </li>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Anna Odlare</div>2024-12-05</p>
-        </li>
-      </ul>
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/413/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-violet">Dekorativ</div>
-          <div class="button-purple">Färgstark</div>
-          <div class="button-navy">Tålig</div>
-          <div class="button-red">Blommor</div>
-        </li>
-        <li>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Anna Odlare</br>2024-12-05</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="https://picsum.photos/id/413/200/300" alt="Växtbild" />
+        <div class="gallery-tag violet">Dekorativ</div>
+        <div class="gallery-tag purple">Färgstark</div>
+        <div class="gallery-tag navy">Tålig</div>
+        <div class="gallery-tag red">Blommor</div>
+        <section>
           <h3>Pelargon</h3>
           <p>En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Blomsterkalle</div>2024-12-03</p>
-        </li>
-      </ul>
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/575/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-ocean">Kryddor</div>
-          <div class="button-pink">Doftande</div>
-          <div class="button-brown">Solälskande</div>
-        </li>
-        <li></li>
-        <h3>Basilika</h3>
-        <p>En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Krydd-Malin</div>2024-12-07</p>
-        </li>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Blomsterkalle</br>2024-12-03</p>
+          </section>
+        </div>
+      </section>
 
-      </ul>
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/24/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-grey">Snabbväxande</div>
-          <div class="button-khaki">Ätbart</div>
-          <div class="button-green">Grönska</div>
-        </li>
-        <li>
+      <section class="card">
+        <img src="https://picsum.photos/id/575/200/300" alt="Växtbild" />
+        <div class="gallery-tag ocean">Kryddor</div>
+        <div class="gallery-tag pink">Doftande</div>
+        <div class="gallery-tag brown">Solälskande</div>
+        <section>
+          <h3>Basilika</h3>
+          <p>En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Krydd-Malin</br>2024-12-07</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="https://picsum.photos/id/24/200/300" alt="Växtbild" />
+        <div class="gallery-tag grey">Snabbväxande</div>
+        <div class="gallery-tag khaki">Ätbart</div>
+        <div class="gallery-tag green">Grönska</div>
+        <section>
           <h3>Sallad</h3>
           <p>Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Grönis</div>2024-12-06</p>
-        </li>
-      </ul>
-      <ul class="card">
-        <li><img src="https://picsum.photos/id/89/200/300" alt="Växtbild" /></li>
-        <li>
-          <div class="button-lake">Luftfuktande</div>
-          <div class="button-green">Grönska</div>
-          <div class="button-violet">Dekorativ</div>
-        </li>
-        <li>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Grönis</br>2024-12-06</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="https://picsum.photos/id/89/200/300" alt="Växtbild" />
+        <div class="gallery-tag lake">Luftfuktande</div>
+        <div class="gallery-tag green">Grönska</div>
+        <div class="gallery-tag violet">Dekorativ</div>
+        <section>
           <h3>Ormbunke</h3>
           <p>En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
-        </li>
-        <li class="author">
-          <img src="/Assets/images/91.png" alt="Avatar" />
-          <p>
-          <div class="bold">Naturvännen</div>2024-12-08</p>
-        </li>
-
-      </ul>
+        </section>
+        <div class="author-wrapper">
+          <section class="author">
+            <img src="/Assets/images/91.png" alt="Avatar" />
+            <p>
+              Naturvännen</br>2024-12-08</p>
+          </section>
+        </div>
+      </section>
     </article>
 
-
-
-
-
-    <article class="article3">
-      <figure class="rund-ikon2">
+    <article class="article2">
+      <figure class="rund-ikon margin-right">
         <img src="/Assets/images/icon-seedling.svg" alt="" />
       </figure>
-      <section class="divider-block2">
+      <section class="divider-block">
         <h2>Våra tidigare odlingar</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt
           veritatis.
@@ -306,14 +325,19 @@
           doloribus?</p>
         <div class="button_more">Planterade plantor</div>
       </section>
-      
-    </article>
 
+    </article>
   </main>
+
+
+
+
+
+
   <footer>
     <div class="wrapper-footer">
-      <div class="left">
-        <ul>
+      <section class="left">
+        <article class="footer-content">
           <svg xmlns="http://www.w3.org/2000/svg" width="214" height="210" viewBox="0 0 214 210">
             <g fill="none" stroke-width="12">
               <path
@@ -322,20 +346,29 @@
                 d="M115.122 194.336C115.527 193.897 115.927 193.455 116.319 193.009L153.69 169.521C182.93 151.143 191.451 112.997 172.598 84.3362C169.529 79.6722 163.25 78.3762 158.555 81.3272L121.425 104.664C118.17 100 114.303 95.6362 109.83 91.6843L66.4654 53.3677C61.8146 49.2582 54.6598 49.6021 50.4409 54.1641C22.9065 83.9378 25.2893 129.917 55.732 156.816L99.097 195.132C103.748 199.242 110.903 198.898 115.122 194.336Z" />
             </g>
           </svg>
-          <li>
-            <h4>Planned<br>Planthood</h4>
-          </li>
-        </ul>
+          <h4>Planned<br>Planthood</h4>
+        </article>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias
           perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius
           molestias? </p>
-        <ul class="contact">
-          <li>Telefon: 020-1234567</li>
-          <li>info@plannedplant.com</li>
-        </ul>
-      </div>
-      <div class="right push">
 
+
+        <section class="contact">
+          <img src="/Assets/images/icon-phone.svg" alt="" />
+          <a href="#">
+            <p>Telefon: 020-1234567</p>
+          </a>
+        </section>
+        <section class="contact">
+          <img src="/Assets/images/icon-email.svg" alt="" />
+          <a href="#">
+            <p>info@plannedplant.com</p>
+          </a>
+        </section>
+
+      </section>
+
+      <div class="right push">
         <ul class="subnav">
           <li>Hem</li>
           <li>Historik</li>
