@@ -196,7 +196,7 @@ header {
   background-color: var(--clr-neutral-100);
 }
 
-nav h1 {
+h1 {
   color: var(--clr-green-400);
   font-weight: var(--fw-semi-bold);
   font-size: var(--fs-500);
@@ -204,7 +204,7 @@ nav h1 {
   line-height: 1rem;
 }
 
-/*Loggan*/
+/*Logga*/
 header svg {
   stroke: var(--clr-green-400);
   height: 50px;
@@ -213,6 +213,7 @@ header svg {
   margin-left: 1rem;
 }
 
+/*Meny*/
 nav ul {
   display: flex;
   flex-direction: row;
@@ -240,6 +241,7 @@ nav ul li:nth-child(6) {
   padding-left: 4rem;
 }
 
+/*Dölj hamburgermeny på desktop*/
 nav ul li:nth-child(7) {
   display: none;
 }
@@ -250,30 +252,31 @@ nav ul li a:hover {
   padding: 1rem;
 }
 
-/*Flyttar menyn till höger*/
+/*Flyttar object i flex till höger*/
 .push {
   margin-left: auto;
 }
 
-/*Text + kollage*/
+/*Text ovanför galleri*/
 .article1 {
   background-color: var(--clr-accent-light-1);
 }
 
 .container-top {
-  text-align: center;
   padding-top: 3%;
   padding-bottom: 1%;
 }
 
 .container-top h2 {
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 .container-top p {
   text-align: center;
 }
 
+/*Galleri med bilder*/
 .gallery1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -316,12 +319,10 @@ nav ul li a:hover {
   max-width: 45ch;
   display: flex;
   flex-direction: column;
-  
 }
 
 .divider-block h2 {
   margin-bottom: 1rem;
-  
 }
 
 .rund-ikon {
@@ -341,19 +342,20 @@ nav ul li a:hover {
   margin-right: 4rem;
 }
 
+/*Knapp i nedre blocket*/
 .button_more {
   align-self: flex-end;
   background-color: var(--clr-green-400);
   border: none;
-  color: white;
+  color: var(--clr-neutral-100);
   padding: 0.75rem 1rem;
   text-align: center;
   text-decoration: none;
   font-size: var(--fs-400);
   border-radius: 15vh;
   font-weight: var(--fw-semi-bold);
-  margin-top: 5%;
-  border: 1px solid var(--clr-green-400);  
+  margin-top: 1.5rem;
+  border: 1px solid var(--clr-green-400);
 }
 
 .button_more:hover {
@@ -382,7 +384,7 @@ input {
 
 button {
   background: var(--clr-green-400);
-  color: white;
+  color: var(--clr-neutral-100);
   border-radius: 20px;
   text-transform: uppercase;
   padding: 0 1rem 0 1rem;
@@ -436,7 +438,7 @@ button:hover {
 
 .gallery-tag {
   border: none;
-  color: white;
+   color: var(--clr-neutral-100);
   padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
@@ -496,6 +498,7 @@ button:hover {
   background-color: var(--clr-air);
 }
 
+/*Nedre delen av kort med text och ikon*/
 .author {
   display: flex;
   flex-direction: row;
@@ -503,6 +506,7 @@ button:hover {
   text-align: left;
 }
 
+/*Försökte använda en wrapper för att få ner denna delen i botten men fick inte till det så gav upp*/
 .author-wrapper {
   margin-top: 3rem;
 }
@@ -514,14 +518,12 @@ button:hover {
   border-radius: 50vh;
   padding: 0;
   margin-right: 0.5rem;
-
 }
 
 .author p {
   line-height: 1rem;
   font-size: var(--fs-300);
 }
-
 
 .bold {
   font-weight: var(--fw-bold);
@@ -599,6 +601,7 @@ footer svg {
   font-weight: var(--fw-500);
   font-size: var(--fs-400);
 }
+
 .contact a:hover {
   color: var(--clr-neutral-100);
   text-decoration: underline;
@@ -612,7 +615,7 @@ footer .subnav {
   list-style: none;
 }
 
-footer .subnav li {
+footer .subnav a {
   color: var(--clr-neutral-100);
   padding: 0;
   font-weight: var(--fw-600);
@@ -631,45 +634,13 @@ footer .subnav li {
 
 
 
-
+/* Media queries for medium screens */
 @media only screen and (max-width: 63.9375em) {
 
   /*MEDIUM SCREEN*/
   .wrapper {
     margin: 0 auto;
     width: 100%;
-  }
-
-  nav h1 {
-    color: var(--clr-green-400);
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-500);
-    text-transform: uppercase;
-    line-height: 1rem;
-  }
-
-  svg {
-    stroke: var(--clr-green-400);
-    height: 50px;
-    width: 50px;
-    padding-top: 1rem;
-    margin-right: 0.5rem;
-    margin-left: 1rem;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    list-style: none;
-  }
-
-  nav ul li {
-    padding: 1.2rem 0 1rem 0;
-    color: var(--clr-green-400);
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-500);
-    text-transform: uppercase;
   }
 
   nav ul li:nth-child(3) {
@@ -687,7 +658,8 @@ footer .subnav li {
   nav ul li:nth-child(6) {
     display: none;
   }
-  
+
+  /*Visa hamburgermeny på tablet*/
   nav ul li:nth-child(7) {
     display: inline-block;
   }
@@ -703,7 +675,6 @@ footer .subnav li {
     background-color: var(--clr-green-400);
     margin: 8px 0;
     border-radius: 2px;
-    
   }
 
   /*Osäker på hur jag ska lösa färgen på hover när mina streck också har bakgrundsfärg*/
@@ -716,12 +687,8 @@ footer .subnav li {
     margin: 0;
   }
 
-  .container-top {
-    text-align: center;
-    max-width: 40ch;
-    padding: 6% 0;
-  }
 
+  /*Galleri med bilder - tablet*/
   .gallery1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -771,7 +738,7 @@ footer .subnav li {
     grid-row-start: 2;
   }
 
-  
+
   /*Nedre block med text och ikon - tablet*/
   .article2 {
     background-color: var(--clr-neutral-100);
@@ -785,6 +752,7 @@ footer .subnav li {
     margin-top: 2rem;
   }
 
+  /*Bytt plats på ikon och text i nedre blocket - tablet*/
   .article2>.rund-ikon {
     order: 1;
   }
@@ -800,25 +768,12 @@ footer .subnav li {
   }
 
   .rund-ikon {
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    background-color: var(--clr-green-400);
-    text-align: center;
-    padding: 40px;
     margin: 0 auto;
   }
 
 
 
-
-
-
-
-
-
-
-  /* Gallery and Cards */
+  /* Galleri med kort - tablet */
   .gallery2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -881,7 +836,7 @@ footer .subnav li {
 
 
 
-
+/* Media queries for small screens */
 @media only screen and (max-width: 39.9375em) {
 
   /*SMALL SCREEN*/
@@ -890,37 +845,11 @@ footer .subnav li {
     width: 100%;
   }
 
-  nav h1 {
-    color: var(--clr-green-400);
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-500);
-    text-transform: uppercase;
-    line-height: 1rem;
-  }
-
   svg {
-    stroke: var(--clr-green-400);
-    height: 50px;
-    width: 50px;
     padding-top: 1rem;
     margin-right: 0.5rem;
     margin-left: 1rem;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    list-style: none;
-  }
-
-  nav ul li {
-    padding: 1.2rem 0 1rem 0;
-    color: var(--clr-green-400);
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-500);
-    text-transform: uppercase;
-  }
+  }  
 
   nav ul li:nth-child(3) {
     display: none;
@@ -1054,7 +983,7 @@ footer .subnav li {
 
 
 
-  /* Galleryi med kort - mobil */
+  /* Galleri med kort - mobil */
   .gallery2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
